@@ -8,5 +8,6 @@ go install github.com/vugu/vgrun
 vgrun -new-from-example=simple myexample
 cd myexample
 vgrun devserver.go
-# browse to: http://localhost:8844/
 ```
+
+Then browse to the running server: http://localhost:8844/
