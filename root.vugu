@@ -1,0 +1,18 @@
+<div>
+    <main role="main" class="container text-center">
+
+        <div class="starter-template mt-5">
+            <h1>Welcome to Vugu</h1>
+            <p class="lead">This page is being rendered via 
+                <a target="_blank" href="https://webassembly.org/">WebAssembly</a>+<a target="_blank" href="https://golang.org/">Go</a>+<a target="_blank" href="https://vugu.org/">Vugu</a>.
+            </p>
+        </div>
+
+    </main>
+</div>
+
+<script type="application/x-go">
+
+type Root struct {}
+    
+</script>
