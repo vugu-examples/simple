@@ -22,6 +22,7 @@ github.com/vugu/html v0.0.0-20190914200101-c62dc20b8289/go.mod h1:Y3pLGz8dZUSrB9
 github.com/vugu/vjson v0.0.0-20200505061711-f9cbed27d3d9/go.mod h1:z7mAqSUjRDMQ09NIO18jG2llXMHLnUHlZ3/8MEMyBPA=
 github.com/vugu/vugu v0.3.4 h1:HkTNuKP+1hEjJVLduM+UtMFrTaousdUqMGimW6DNGmk=
 github.com/vugu/vugu v0.3.4/go.mod h1:HdbHNi0CymHJEW8XdZMfHnEUkW5Wu2fyaNcg7BaMk+Q=
+github.com/vugu/xxhash v0.0.0-20191111030615-ed24d0179019 h1:8NGiD5gWbVGObr+lnqcbM2rcOQBO6mr+m19BIblCdho=
 github.com/vugu/xxhash v0.0.0-20191111030615-ed24d0179019/go.mod h1:PrBK6+LJXwb+3EnJTHo43Uh4FhjFFwvN4jKk4Zc5zZ8=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/net v0.0.0-20190912160710-24e19bdeb0f2/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
