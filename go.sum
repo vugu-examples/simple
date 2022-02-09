@@ -19,6 +19,7 @@ github.com/tdewolff/minify/v2 v2.9.15/go.mod h1:tK4qPnHUZgANtEGVMwTBxrF1eNIBkigH
 github.com/tdewolff/parse/v2 v2.5.14/go.mod h1:WzaJpRSbwq++EIQHYIRTpbYKNA3gn9it1Ik++q4zyho=
 github.com/tdewolff/test v1.0.6/go.mod h1:6DAvZliBAAnD7rhVgwaM7DE5/d9NMOAJ09SqYqeK4QE=
 github.com/vugu/html v0.0.0-20190914200101-c62dc20b8289/go.mod h1:Y3pLGz8dZUSrB9SARXqFmtW8RNs4HIGAr0+JaWL31Vg=
+github.com/vugu/vjson v0.0.0-20200505061711-f9cbed27d3d9 h1:0cwYt2uGUAwxOYF6zAkVvCKWt8zOV3JhQqjvwKb6jf0=
 github.com/vugu/vjson v0.0.0-20200505061711-f9cbed27d3d9/go.mod h1:z7mAqSUjRDMQ09NIO18jG2llXMHLnUHlZ3/8MEMyBPA=
 github.com/vugu/vugu v0.3.4 h1:HkTNuKP+1hEjJVLduM+UtMFrTaousdUqMGimW6DNGmk=
 github.com/vugu/vugu v0.3.4/go.mod h1:HdbHNi0CymHJEW8XdZMfHnEUkW5Wu2fyaNcg7BaMk+Q=
