@@ -1,0 +1,44 @@
+# Ensure Go is installed, and docker for the nginx webserving part.
+# Then install required tools with:
+# go install github.com/go-task/task/v3/cmd/task@latest # or see https://taskfile.dev/installation/
+# go install github.com/vugu/vgutil@latest
+
+version: '3'
+
+tasks:
+
+  clean:
+    cmds:
+      - rm -Rf ./public
+
+  build-vugu:
+    cmds:
+      - mkdir -p public
+      
+      # generate and build
+      - vugugen -s
+
+      # build the wasm
+      - GOARCH=wasm GOOS=js go build -o public/index.wasm .
+
+      # copy wasm_exec.js
+      - cp $(go env GOROOT)/misc/wasm/wasm_exec.js public/wasm_exec.js
+
+      # add the hash to the output file name(s)
+      # TODO: return this into: vgutil hash-rename public/index.wasm
+      - mv public/index.wasm public/index-`vgutil hash public/index.wasm`.wasm
+      - mv public/wasm_exec.js public/wasm_exec-`vgutil hash public/wasm_exec.js`.js
+
+  build:
+    deps: [build-vugu]
+    cmds:
+
+      - vgutil page-tmpl --in=index.tmpl --out public/index.html public/*.wasm public/*.js
+
+  watch-and-build:
+    - while true; do vgutil watch .; task build; done
+
+  run-local-webserver:
+    deps: [build]
+    cmds:
+      - docker run --rm --mount type=bind,source=./public,target=/usr/share/nginx/html,readonly -p 8888:80 nginx
